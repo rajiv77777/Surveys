@@ -1,17 +1,31 @@
 package com.webapp.surveys.demo.Model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
 public class SurveyModel {
-
 	@Id
+	private int id;
 	private String Name;
-	private String Email;
-	private String Age;
+	private String Email;	
+	private int Age;
 	private String Language;
 	private String Comment;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getComment() {
+		return Comment;
+	}
+	public void setComment(String comment) {
+		Comment = comment;
+	}
 	
 	public String getName() {
 		return Name;
@@ -25,10 +39,10 @@ public class SurveyModel {
 	public void setEmail(String email) {
 		Email = email;
 	}
-	public String getAge() {
+	public int getAge() {
 		return Age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		Age = age;
 	}
 	public String getLanguage() {
