@@ -2,6 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">  
 <head>
 <meta charset="ISO-8859-1">
+
+<script type="text/javascript" src="js/index.js"></script> 
+
 <title>Surveys</title>
 <style>
  * {box-sizing: border-box;}
@@ -144,6 +147,7 @@ body {
                    id="idid"
                    name="id"
                    required
+                   maxlength="5"
                    placeholder="Enter your ID" />
         </div>
  		
@@ -155,9 +159,10 @@ body {
  
             <!-- Input Type Text -->
             <input type="text"
-                   id="name"
-                   name="Name"
+                   id="name-id"
+                   name="name"
                    required
+                   maxlength="15"
                    placeholder="Enter your name" />
         </div>
   
@@ -171,6 +176,7 @@ body {
                    id="email"
                    name="Email"
                    required
+                   maxlength="15"
                    placeholder="Enter your email" />
         </div>
   
@@ -184,6 +190,7 @@ body {
                    id="age"
                    name="Age"
                    required
+                   maxlength="2"
                    placeholder="Enter your age" />
         </div>
 
@@ -211,6 +218,7 @@ body {
             <input type="text"
                    id="commentsID"
                    name="Comments"
+                   maxlength="15"
                    placeholder="Enter your Comment" />
         </div>
  

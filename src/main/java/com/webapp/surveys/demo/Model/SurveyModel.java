@@ -1,14 +1,13 @@
 package com.webapp.surveys.demo.Model;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
 public class SurveyModel {
 	@Id
 	private int id;
-	private String Name;
+	private String name;
 	private String Email;	
 	private int Age;
 	private String Language;
@@ -28,10 +27,10 @@ public class SurveyModel {
 	}
 	
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 	public String getEmail() {
 		return Email;
@@ -59,7 +58,7 @@ public class SurveyModel {
 	}
 	@Override
 	public String toString() {
-		return "SurveyRepo [Name=" + Name + ", Email=" + Email + ", Age=" + Age + ", Language=" + Language
+		return "SurveyRepo [Name=" + name + ", Email=" + Email + ", Age=" + Age + ", Language=" + Language
 				+ ", Comments=" + Comment + "]";
 	}
 	

@@ -28,9 +28,9 @@ public class SurveyControllerREST {
 		
 	}
 	
-	/*@GetMapping("/api/getByName/{id}")
-	public void getByName(@PathVariable ("id") String id ) {
-		System.out.println(repo.findByName(id));
+	@GetMapping("/api/getByName/{name}")
+	public List<SurveyModel> getByName(@PathVariable ("name") String name ) {
+		return repo.findByName(name);
 		
-	}*/
+	}
 }
